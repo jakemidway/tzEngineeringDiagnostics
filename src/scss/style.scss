@@ -4,8 +4,8 @@
 
 
 // Base
-@import 'base/fonts';
-@import 'base/common';
+@import 'base/fonts.scss';
+@import 'base/common.scss';
 
 
 // animations
@@ -21,7 +21,7 @@
 // @import 'elements/button';
 
 //components; - middle BEM blocks
-// @import 'components/header';
+@import 'components/header';
 
 
 // sections - big BEM  blocks

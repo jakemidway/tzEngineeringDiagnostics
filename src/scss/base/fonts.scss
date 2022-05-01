@@ -1,29 +1,29 @@
 @font-face {
-  font-family: 'Jost';
+  font-family: 'Gilroy';
   font-weight: 400;
   font-style: normal;
   font-display: swap;
-  src: local('Jost'), 
-      url('./../../fonts/Jost-Regular.ttf') format('ttf');
+  src: local('Gilroy'), 
+      url('./../../fonts/Gilroy/Gilroy-Regular.ttf');
 }
 
 @font-face {
-  font-family: 'Jost';
-  font-weight: 500;
+  font-family: 'Proxima';
+  font-weight: 400;
   font-style: normal;
   font-display: swap;
-  src: local('Jost'), 
-      url('./../../fonts/Jost-Medium.ttf') format('ttf');
+  src: local('Proxima'), 
+      url('./../../fonts/ProximaNova/ProximaNova-Regular.ttf') format('ttf');
       
 }
 
 @font-face {
-  font-family: 'NewBaskervilleC';
+  font-family: 'BebasNeue';
   font-weight: 400;
   font-style: normal;
   font-display: swap;
-  src: local('NewBaskervilleC'), 
-      url('./../../fonts/NewBaskervilleCRegular.otf') format('otf');
+  src: local('BebasNeue'), 
+      url('./../../fonts/Bebas_Neue/BebasNeue-Regular.ttf') format('ttf');
 }
 
 
