@@ -1,0 +1,19 @@
+.button{
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 500;
+    color: var(--color-text-dark);
+    background-color: var(--color-accent);
+    
+    border: 2px solid var(--color-accent);
+    border-radius: 2px;
+    @include transition-time(2);
+    &:hover{
+        color: var(--color-text-dark);
+        background-color: var(--color-text-light);
+    }
+    &:active{
+        background-color: hsl(0, 0%, 80%);
+        color: var(--color-text-dark);
+    }
+}

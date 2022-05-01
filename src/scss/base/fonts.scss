@@ -6,6 +6,14 @@
   src: local('Gilroy'), 
       url('./../../fonts/Gilroy/Gilroy-Regular.ttf');
 }
+@font-face {
+  font-family: 'Gilroy';
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+  src: local('Gilroy'), 
+      url('./../../fonts/Gilroy/Gilroy-Extrabold.ttf');
+}
 
 @font-face {
   font-family: 'Proxima';

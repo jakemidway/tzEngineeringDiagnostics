@@ -12,11 +12,17 @@ body {
 
 h1, h2, h3, h4, h5{
     font-family: 'Gilroy', serif;
-    font-weight: 700;
+}
+h1{
+    font-size: 42px;
+    line-height: 52px;
+    font-weight: 800;
+    
 }
 
 a{
     text-decoration: none;
+    color: var(--color-text-accent);
 }
 
 li {

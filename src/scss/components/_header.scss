@@ -1,6 +1,107 @@
 .header {
     color: var(--color-text-light);
-    background: linear-gradient(#004E86, #0A4168);
-    
-}
+    background-image: linear-gradient(rgba(0, 78, 134, 0.8), rgba(10, 65, 104, 0.8)),
+    url(./../../images/header/sean-pollock-203658-unsplash.png);
+    background-repeat: no-repeat;    
+    padding: 18px 0 60px 0;
+    &__top{
+        padding: 8px 0 24px;
+        font-size: 12px;
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: repeat(12, 1fr);
+    }
+    &__btnBurger{
+        background: none;
+        border: none;
+        justify-self: start;
+    }
+    &__logo{
+        grid-column-start: 2;
+        grid-column-end: 4;
+    }
+    &__contMail{
+        grid-column-start: 9;
+        grid-column-end: 11;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        span{
+            opacity: 0.5;
+        }
+    }
+    &__mailLink{
+        display: block;
+        position: relative;
+        font-size: 14px;
+        padding-left: 23px;
+        &::after{
+            display: block;
+            position: absolute;
+            left: -1px;
+            top: 2px;
+            content: '';
+
+            width: 14px;
+            height: 14px;
+            background: url(./../../images/header/mail.svg) 50% no-repeat;
+        }
+    }
+    &__contTel{
+        grid-column-start: 11;
+        grid-column-end: 13;
+        justify-self: end;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-end;
+        span{
+            transform: translateY(-8px);
+            position: relative;
+            opacity: 0.5;
+            padding-left: 18px;
+            &::after{
+                display: block;
+                position: absolute;
+                left: 0;
+                top: 0;
+                content: '';
+                width: 11px;
+                height: 11px;
+                background: url(./../../images/header/phone.svg) 50% no-repeat;
+            }
+        }
+    }
+    &__telLink{
+        color: var(--color-text-light);
+        font-size: 20px;
+        line-height: 20px;
+        font-weight: 700;
+    }
+    &__banner{
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: repeat(12, 1fr);
+        padding: 122px 0 0;
+    }
+    &__titleWrapper{
+        grid-column-start: 2;
+        grid-column-end: 7;
+        max-width: 580px;
+    }
+    &__title{
+        margin-bottom: 32px;
+    }
+    &__titleescription{
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 34px;
+        max-width: 388px;
+        opacity: 0.7;
+    }
+    &__getCom{
+        grid-column-start: 9;
+        grid-column-end: 12;
+    }
+}   
     

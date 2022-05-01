@@ -404,6 +404,14 @@ template {
 }
 
 @font-face {
+  font-family: "Gilroy";
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+  src: local("Gilroy"), url("./../../fonts/Gilroy/Gilroy-Extrabold.ttf");
+}
+
+@font-face {
   font-family: "Proxima";
   font-weight: 400;
   font-style: normal;
@@ -438,11 +446,17 @@ h3,
 h4,
 h5 {
   font-family: "Gilroy", serif;
-  font-weight: 700;
+}
+
+h1 {
+  font-size: 42px;
+  line-height: 52px;
+  font-weight: 800;
 }
 
 a {
   text-decoration: none;
+  color: var(--color-text-accent);
 }
 
 li {
@@ -450,14 +464,177 @@ li {
 }
 
 .container {
-  padding: 0 0px;
-  max-width: 1400px;
+  padding: 0 20px;
+  max-width: 1440px;
   margin: auto;
+}
+
+.button {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 500;
+  color: var(--color-text-dark);
+  background-color: var(--color-accent);
+  border: 2px solid var(--color-accent);
+  border-radius: 2px;
+  -webkit-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.button:hover {
+  color: var(--color-text-dark);
+  background-color: var(--color-text-light);
+}
+
+.button:active {
+  background-color: hsl(0deg, 0%, 80%);
+  color: var(--color-text-dark);
 }
 
 .header {
   color: var(--color-text-light);
-  background: -webkit-gradient(linear, left top, left bottom, from(#004E86), to(#0A4168));
-  background: -o-linear-gradient(#004E86, #0A4168);
-  background: linear-gradient(#004E86, #0A4168);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 78, 134, 0.8)), to(rgba(10, 65, 104, 0.8))), url(./../../images/header/sean-pollock-203658-unsplash.png);
+  background-image: -o-linear-gradient(rgba(0, 78, 134, 0.8), rgba(10, 65, 104, 0.8)), url(./../../images/header/sean-pollock-203658-unsplash.png);
+  background-image: linear-gradient(rgba(0, 78, 134, 0.8), rgba(10, 65, 104, 0.8)), url(./../../images/header/sean-pollock-203658-unsplash.png);
+  background-repeat: no-repeat;
+  padding: 18px 0 60px 0;
 }
+
+.header__top {
+  padding: 8px 0 24px;
+  font-size: 12px;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.header__btnBurger {
+  background: none;
+  border: none;
+  justify-self: start;
+}
+
+.header__logo {
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+
+.header__contMail {
+  grid-column-start: 9;
+  grid-column-end: 11;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header__contMail span {
+  opacity: 0.5;
+}
+
+.header__mailLink {
+  display: block;
+  position: relative;
+  font-size: 14px;
+  padding-left: 23px;
+}
+
+.header__mailLink::after {
+  display: block;
+  position: absolute;
+  left: -1px;
+  top: 2px;
+  content: "";
+  width: 14px;
+  height: 14px;
+  background: url(./../../images/header/mail.svg) 50% no-repeat;
+}
+
+.header__contTel {
+  grid-column-start: 11;
+  grid-column-end: 13;
+  justify-self: end;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.header__contTel span {
+  -webkit-transform: translateY(-8px);
+      -ms-transform: translateY(-8px);
+          transform: translateY(-8px);
+  position: relative;
+  opacity: 0.5;
+  padding-left: 18px;
+}
+
+.header__contTel span::after {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  content: "";
+  width: 11px;
+  height: 11px;
+  background: url(./../../images/header/phone.svg) 50% no-repeat;
+}
+
+.header__telLink {
+  color: var(--color-text-light);
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 700;
+}
+
+.header__banner {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(12, 1fr);
+  padding: 122px 0 0;
+}
+
+.header__titleWrapper {
+  grid-column-start: 2;
+  grid-column-end: 7;
+  max-width: 580px;
+}
+
+.header__title {
+  margin-bottom: 32px;
+}
+
+.header__titleescription {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 34px;
+  max-width: 388px;
+  opacity: 0.7;
+}
+
+.header__getCom {
+  grid-column-start: 9;
+  grid-column-end: 12;
+}
+
+.webp .header { background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 78, 134, 0.8)), to(rgba(10, 65, 104, 0.8))), url(./../../images/header/sean-pollock-203658-unsplash.webp); }
+
+.webp .header { background-image: -o-linear-gradient(rgba(0, 78, 134, 0.8), rgba(10, 65, 104, 0.8)), url(./../../images/header/sean-pollock-203658-unsplash.webp); }
+
+.webp .header { background-image: linear-gradient(rgba(0, 78, 134, 0.8), rgba(10, 65, 104, 0.8)), url(./../../images/header/sean-pollock-203658-unsplash.webp); }
