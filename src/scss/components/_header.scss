@@ -78,11 +78,12 @@
         line-height: 20px;
         font-weight: 700;
     }
-    &__banner{
+    &__middle{
         display: grid;
         grid-gap: 20px;
         grid-template-columns: repeat(12, 1fr);
         padding: 122px 0 0;
+        margin-bottom: 75px;
     }
     &__titleWrapper{
         grid-column-start: 2;
@@ -100,8 +101,40 @@
         opacity: 0.7;
     }
     &__getCom{
+        padding-top: 14px;
         grid-column-start: 9;
         grid-column-end: 12;
     }
+    &__btnGetCom{
+        width: 100%;
+        padding: 25px 0;
+        margin-bottom: 36px;
+    }
+    &__textGetCom{
+        font-size: 15px;
+        line-height: 28px;
+    }
+
+
+    &__bannerList{
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    &__itemNumber{
+        margin-right: 31px;
+    }
+    &__listItem{
+        align-self: end;
+        display: flex;
+        max-width: 260px;
+        font-weight: 700;
+        line-height: 28px;
+    }
+    &__video{
+        justify-self: end;
+    }
 }   
+
+
     

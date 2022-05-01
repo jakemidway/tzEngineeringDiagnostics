@@ -470,9 +470,11 @@ li {
 }
 
 .button {
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: 500;
+  font-family: "Gilroy", serif;
+  font-size: 15px;
+  line-height: 15px;
+  letter-spacing: 1.4px;
+  font-weight: 800;
   color: var(--color-text-dark);
   background-color: var(--color-accent);
   border: 2px solid var(--color-accent);
@@ -603,11 +605,12 @@ li {
   font-weight: 700;
 }
 
-.header__banner {
+.header__middle {
   display: grid;
   grid-gap: 20px;
   grid-template-columns: repeat(12, 1fr);
   padding: 122px 0 0;
+  margin-bottom: 75px;
 }
 
 .header__titleWrapper {
@@ -629,8 +632,45 @@ li {
 }
 
 .header__getCom {
+  padding-top: 14px;
   grid-column-start: 9;
   grid-column-end: 12;
+}
+
+.header__btnGetCom {
+  width: 100%;
+  padding: 25px 0;
+  margin-bottom: 36px;
+}
+
+.header__textGetCom {
+  font-size: 15px;
+  line-height: 28px;
+}
+
+.header__bannerList {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.header__itemNumber {
+  margin-right: 31px;
+}
+
+.header__listItem {
+  -ms-flex-item-align: end;
+      align-self: end;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 260px;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+.header__video {
+  justify-self: end;
 }
 
 .webp .header { background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 78, 134, 0.8)), to(rgba(10, 65, 104, 0.8))), url(./../../images/header/sean-pollock-203658-unsplash.webp); }
