@@ -1,0 +1,29 @@
+@font-face {
+  font-family: 'Jost';
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: local('Jost'), 
+      url('./../../fonts/Jost-Regular.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'Jost';
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  src: local('Jost'), 
+      url('./../../fonts/Jost-Medium.ttf') format('ttf');
+      
+}
+
+@font-face {
+  font-family: 'NewBaskervilleC';
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: local('NewBaskervilleC'), 
+      url('./../../fonts/NewBaskervilleCRegular.otf') format('otf');
+}
+
+
