@@ -1,28 +1,79 @@
 .advantage{
-    padding: 100px 0 89px;
+    padding: 91px 0 89px;
     font-size: 18px;
     // color: var(--color-text-light-gray);
     &__wrapper{
         display: grid;
-        grid-gap: 20px;
-        grid-template-columns: repeat(3, 1fr);
-        align-items: center;
+        grid-gap: 64px;
+        grid-template-columns: 1fr 1fr;
+        grid-auto-rows: auto;
+        align-items: start;
+        @include minW800{
+            grid-template-columns: repeat(4, 1fr);
+        }
+        @include minW1024{
+            grid-template-columns: repeat(3, 1fr);
+            align-items: center;
+            grid-gap: 20px;
+        }
+    }
+
+
+
+
+    &__leftBlock{
+        grid-column: 1 / -1;
+        margin-bottom: 26px;
+        @include minW800{
+            grid-column: 1 / 3;
+            grid-row: 2 / 3;
+        }
+        @include minW1024{
+            grid-column: 1 / 2;
+            grid-row: 1 / -1;
+        }
     }
     &__title{
         margin-bottom: 50px;
+        line-height: 42px;
     }
     &__text{
         color: var(--color-text-light-gray);
         line-height: 28px;
     }
+
+
+
+
     &__image{
         justify-self: center;
         transform: rotate(-20deg);
+        grid-column: 1 / -1;
+        @include minW1024{
+            grid-column: 2 / 3;
+            grid-row: 1 / -1;
+        }
     }
     &__img{
         width: 300px;
     }
 
+
+
+
+
+
+    &__rightBlock{
+        grid-column: 1 / -1;
+        padding-top: 10px;
+        @include minW800{
+            grid-column: -1 / -3;  
+        }
+        @include minW1024{
+            grid-column: 3 / 4;
+            grid-row: 1 / -1;
+        }
+    }
     &__titleList{
         font-size: 24px;
         font-weight: 700;
@@ -41,6 +92,8 @@
         &::after{
             position: absolute;
             left: 0;
+            top: 50%;
+            transform: translateY(-50%);
             width: 30px;
             height: 30px;
             content: '';

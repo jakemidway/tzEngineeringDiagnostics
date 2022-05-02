@@ -622,7 +622,7 @@ li {
   grid-template-columns: 1fr;
   grid-template-rows: repeat(2, auto);
   padding-top: 62px;
-  margin-bottom: 75px;
+  margin-bottom: 30px;
 }
 
 .header__titleWrapper {
@@ -699,6 +699,7 @@ li {
   grid-gap: 20px;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(3, 1fr);
+  row-gap: 0;
 }
 
 .header__itemNumber {
@@ -723,21 +724,28 @@ li {
 }
 
 .advantage {
-  padding: 100px 0 89px;
+  padding: 91px 0 89px;
   font-size: 18px;
 }
 
 .advantage__wrapper {
   display: grid;
-  grid-gap: 20px;
-  grid-template-columns: repeat(3, 1fr);
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  grid-gap: 64px;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: auto;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+
+.advantage__leftBlock {
+  grid-column: 1/-1;
+  margin-bottom: 26px;
 }
 
 .advantage__title {
   margin-bottom: 50px;
+  line-height: 42px;
 }
 
 .advantage__text {
@@ -750,10 +758,16 @@ li {
   -webkit-transform: rotate(-20deg);
       -ms-transform: rotate(-20deg);
           transform: rotate(-20deg);
+  grid-column: 1/-1;
 }
 
 .advantage__img {
   width: 300px;
+}
+
+.advantage__rightBlock {
+  grid-column: 1/-1;
+  padding-top: 10px;
 }
 
 .advantage__titleList {
@@ -778,6 +792,10 @@ li {
 .advantage__item::after {
   position: absolute;
   left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
   width: 30px;
   height: 30px;
   content: "";
@@ -837,7 +855,7 @@ li {
   }
 
   .header__middle {
-    padding: 122px 0 0;
+    padding-top: 102px;
     grid-template-columns: repeat(12, 1fr);
   }
 
@@ -855,6 +873,19 @@ li {
     padding-top: 14px;
     grid-column: 8/12;
   }
+
+  .advantage__wrapper {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .advantage__leftBlock {
+    grid-column: 1/3;
+    grid-row: 2/3;
+  }
+
+  .advantage__rightBlock {
+    grid-column: -1/-3;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -865,6 +896,29 @@ li {
 
   .header__getCom {
     grid-column: 8/11;
+  }
+
+  .advantage__wrapper {
+    grid-template-columns: repeat(3, 1fr);
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    grid-gap: 20px;
+  }
+
+  .advantage__leftBlock {
+    grid-column: 1/2;
+    grid-row: 1/-1;
+  }
+
+  .advantage__image {
+    grid-column: 2/3;
+    grid-row: 1/-1;
+  }
+
+  .advantage__rightBlock {
+    grid-column: 3/4;
+    grid-row: 1/-1;
   }
 }
 

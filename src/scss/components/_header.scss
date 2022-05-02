@@ -137,10 +137,10 @@
         grid-template-columns: 1fr;
         grid-template-rows: repeat(2, auto);
         padding-top: 62px;
-        margin-bottom: 75px;
+        margin-bottom: 30px;
 
         @include minW800 {
-            padding: 122px 0 0;
+            padding-top: 102px;
             grid-template-columns: repeat(12, 1fr);
         }
     }
@@ -239,6 +239,7 @@
         grid-gap: 20px;
         grid-template-columns: repeat(12, 1fr);
         grid-template-rows: repeat(3, 1fr);
+        row-gap: 0;
         
         @include minW1440 {
             grid-template-columns: repeat(4, 1fr);
