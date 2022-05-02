@@ -500,6 +500,7 @@ li {
   background-image: -o-linear-gradient(rgba(0, 78, 134, 0.8), rgba(10, 65, 104, 0.8)), url(./../../images/header/sean-pollock-203658-unsplash.png);
   background-image: linear-gradient(rgba(0, 78, 134, 0.8), rgba(10, 65, 104, 0.8)), url(./../../images/header/sean-pollock-203658-unsplash.png);
   background-repeat: no-repeat;
+  background-size: cover;
   padding: 18px 0 60px 0;
 }
 
@@ -523,8 +524,8 @@ li {
 }
 
 .header__contMail {
-  grid-column-start: 9;
-  grid-column-end: 11;
+  grid-column: 9/11;
+  justify-self: start;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -560,8 +561,7 @@ li {
 }
 
 .header__contTel {
-  grid-column-start: 11;
-  grid-column-end: 13;
+  grid-column: 11/13;
   justify-self: end;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -579,9 +579,6 @@ li {
 }
 
 .header__contTel span {
-  -webkit-transform: translateY(-8px);
-      -ms-transform: translateY(-8px);
-          transform: translateY(-8px);
   position: relative;
   opacity: 0.5;
   padding-left: 18px;
@@ -600,8 +597,8 @@ li {
 
 .header__telLink {
   color: var(--color-text-light);
-  font-size: 20px;
-  line-height: 20px;
+  font-size: 16px;
+  line-height: 16px;
   font-weight: 700;
 }
 
@@ -614,8 +611,8 @@ li {
 }
 
 .header__titleWrapper {
-  grid-column-start: 2;
-  grid-column-end: 7;
+  grid-column-start: 1;
+  grid-column-end: 8;
   max-width: 580px;
 }
 
@@ -671,6 +668,29 @@ li {
 
 .header__video {
   justify-self: end;
+}
+
+@media (min-width: 1024px) {
+  .header__titleWrapper {
+    grid-column-start: 2;
+  }
+}
+
+@media (min-width: 1440px) {
+  .header__contTel span {
+    -webkit-transform: translateY(-8px);
+        -ms-transform: translateY(-8px);
+            transform: translateY(-8px);
+  }
+
+  .header__telLink {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .header__titleWrapper {
+    grid-column-end: 7;
+  }
 }
 
 .webp .header { background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 78, 134, 0.8)), to(rgba(10, 65, 104, 0.8))), url(./../../images/header/sean-pollock-203658-unsplash.webp); }
