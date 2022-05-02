@@ -22,7 +22,14 @@
   font-display: swap;
   src: local('Proxima'), 
       url('./../../fonts/ProximaNova/ProximaNova-Regular.ttf') format('ttf');
-      
+}
+@font-face {
+  font-family: 'Proxima';
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: local('Proxima'), 
+      url('./../../fonts/ProximaNova/ProximaNova-Bold.ttf') format('ttf');
 }
 
 @font-face {

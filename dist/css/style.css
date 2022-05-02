@@ -386,6 +386,7 @@ template {
 :root {
   --color-text-light: #fff;
   --color-text-gray: #333333;
+  --color-text-light-gray: #707070;
   --color-text-dark: #151515;
   --color-text-accent: #FEE040;
   --color-accent: #FEE040;
@@ -420,6 +421,14 @@ template {
 }
 
 @font-face {
+  font-family: "Proxima";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: local("Proxima"), url("./../../fonts/ProximaNova/ProximaNova-Bold.ttf") format("ttf");
+}
+
+@font-face {
   font-family: "BebasNeue";
   font-weight: 400;
   font-style: normal;
@@ -451,6 +460,11 @@ h5 {
 h1 {
   font-size: 42px;
   line-height: 52px;
+  font-weight: 800;
+}
+
+h2 {
+  font-size: 32px;
   font-weight: 800;
 }
 
@@ -708,6 +722,72 @@ li {
   border-radius: 50%;
 }
 
+.advantage {
+  padding: 100px 0 89px;
+  font-size: 18px;
+}
+
+.advantage__wrapper {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.advantage__title {
+  margin-bottom: 50px;
+}
+
+.advantage__text {
+  color: var(--color-text-light-gray);
+  line-height: 28px;
+}
+
+.advantage__image {
+  justify-self: center;
+  -webkit-transform: rotate(-20deg);
+      -ms-transform: rotate(-20deg);
+          transform: rotate(-20deg);
+}
+
+.advantage__img {
+  width: 300px;
+}
+
+.advantage__titleList {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 34px;
+  margin-bottom: 24px;
+}
+
+.advantage__list {
+  color: var(--color-text-gray);
+}
+
+.advantage__item {
+  position: relative;
+  padding-left: 50px;
+  font-size: 18px;
+  line-height: 26px;
+  margin-bottom: 15px;
+}
+
+.advantage__item::after {
+  position: absolute;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  content: "";
+  background-color: var(--color-accent);
+  background-image: url(./../../images/advantage/check.png);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+}
+
 @media (min-width: 542px) {
   .header__listItem {
     max-width: 260px;
@@ -838,3 +918,5 @@ li {
 .webp .header { background-image: -o-linear-gradient(rgba(0, 78, 134, 0.8), rgba(10, 65, 104, 0.8)), url(./../../images/header/sean-pollock-203658-unsplash.webp); }
 
 .webp .header { background-image: linear-gradient(rgba(0, 78, 134, 0.8), rgba(10, 65, 104, 0.8)), url(./../../images/header/sean-pollock-203658-unsplash.webp); }
+
+.webp .advantage__item::after { background-image: url(./../../images/advantage/check.webp); }
