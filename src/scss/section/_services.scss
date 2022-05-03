@@ -1,0 +1,40 @@
+.services {
+    color: var(--color-text-light);
+    background-image: url(./../../images/services/bg.png),
+        linear-gradient(rgba(0, 78, 134, 0.8), rgba(10, 65, 104, 0.8));
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px 0 80px;
+    overflow: hidden;
+    
+    &__wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__preTitle{
+        font-size: 20px;
+        font-family: 'Bebas Neue';
+        font-weight: 700;
+        color: var(--color-text-accent);
+        letter-spacing: 20px;
+    }
+    &__slider{
+        align-self: flex-start;
+        padding-top: 29px;  
+    }
+    &__list{
+        position: relative;
+        display: flex;
+        left: 0px;
+    }
+    &__item{
+        width: 400px;
+        min-height: 381px;
+        margin-right: 80px;
+        border: 1px solid red;
+        
+    }
+}
+

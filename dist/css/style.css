@@ -401,7 +401,7 @@ template {
   font-weight: 400;
   font-style: normal;
   font-display: swap;
-  src: local("Gilroy"), url("./../../fonts/Gilroy/Gilroy-Regular.ttf");
+  src: local("Gilroy"), url("./../fonts/Gilroy/Gilroy-Regular.ttf");
 }
 
 @font-face {
@@ -409,7 +409,7 @@ template {
   font-weight: 800;
   font-style: normal;
   font-display: swap;
-  src: local("Gilroy"), url("./../../fonts/Gilroy/Gilroy-Extrabold.ttf");
+  src: local("Gilroy"), url("./../fonts/Gilroy/Gilroy-Extrabold.ttf");
 }
 
 @font-face {
@@ -417,7 +417,7 @@ template {
   font-weight: 400;
   font-style: normal;
   font-display: swap;
-  src: local("Proxima"), url("./../../fonts/ProximaNova/ProximaNova-Regular.ttf") format("ttf");
+  src: local("Proxima"), url("./../fonts/ProximaNova/ProximaNova-Regular.ttf") format("ttf");
 }
 
 @font-face {
@@ -425,15 +425,15 @@ template {
   font-weight: 700;
   font-style: normal;
   font-display: swap;
-  src: local("Proxima"), url("./../../fonts/ProximaNova/ProximaNova-Bold.ttf") format("ttf");
+  src: local("Proxima"), url("./../fonts/ProximaNova/ProximaNova-Bold.ttf") format("ttf");
 }
 
 @font-face {
-  font-family: "BebasNeue";
+  font-family: "Bebas Neue";
   font-weight: 400;
   font-style: normal;
   font-display: swap;
-  src: local("BebasNeue"), url("./../../fonts/Bebas_Neue/BebasNeue-Regular.ttf") format("ttf");
+  src: local("Bebas Neue"), url("./../../fonts/BebasNeue/bebas-neue-bold.ttf") format("ttf");
 }
 
 * {
@@ -806,6 +806,63 @@ li {
   border-radius: 50%;
 }
 
+.services {
+  color: var(--color-text-light);
+  background-image: url(./../../images/services/bg.png), -webkit-gradient(linear, left top, left bottom, from(rgba(0, 78, 134, 0.8)), to(rgba(10, 65, 104, 0.8)));
+  background-image: url(./../../images/services/bg.png), -o-linear-gradient(rgba(0, 78, 134, 0.8), rgba(10, 65, 104, 0.8));
+  background-image: url(./../../images/services/bg.png), linear-gradient(rgba(0, 78, 134, 0.8), rgba(10, 65, 104, 0.8));
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 100px 0 80px;
+  overflow: hidden;
+}
+
+.services__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.services__preTitle {
+  font-size: 20px;
+  font-family: "Bebas Neue";
+  font-weight: 700;
+  color: var(--color-text-accent);
+  letter-spacing: 20px;
+}
+
+.services__slider {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  padding-top: 29px;
+}
+
+.services__list {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  left: 0px;
+}
+
+.services__item {
+  width: 400px;
+  min-height: 381px;
+  margin-right: 80px;
+  border: 1px solid red;
+}
+
+.step {
+  height: 800px;
+}
+
 @media (min-width: 542px) {
   .header__listItem {
     max-width: 260px;
@@ -974,3 +1031,9 @@ li {
 .webp .header { background-image: linear-gradient(rgba(0, 78, 134, 0.8), rgba(10, 65, 104, 0.8)), url(./../../images/header/sean-pollock-203658-unsplash.webp); }
 
 .webp .advantage__item::after { background-image: url(./../../images/advantage/check.webp); }
+
+.webp .services { background-image: url(./../../images/services/bg.webp), -webkit-gradient(linear, left top, left bottom, from(rgba(0, 78, 134, 0.8)), to(rgba(10, 65, 104, 0.8))); }
+
+.webp .services { background-image: url(./../../images/services/bg.webp), -o-linear-gradient(rgba(0, 78, 134, 0.8), rgba(10, 65, 104, 0.8)); }
+
+.webp .services { background-image: url(./../../images/services/bg.webp), linear-gradient(rgba(0, 78, 134, 0.8), rgba(10, 65, 104, 0.8)); }

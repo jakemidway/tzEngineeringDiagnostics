@@ -40,7 +40,7 @@ let path = {
 		/* В эти папки будут собираться файлы */
 		html: distPath,
 		css: distPath + "css/",
-		js: distPath + "js/",
+		js: distPath + "script/",
 		img: distPath + "images/",
 		fonts: distPath + "fonts/",
 	},
@@ -48,7 +48,7 @@ let path = {
 	src: {
 		html: [srcPath + "*.html", "!" + srcPath + "_*.html", srcPath + "pages/*.html", "!" + srcPath + "pages/_*.html"],
 		scss: srcPath + "scss/style.scss",
-		js: srcPath + "js/*.js",
+		js: srcPath + "script/*.js",
 		img: srcPath + "images/**/*.{jpg,png,svg,gif,ico,webp}",
 		fonts: srcPath + "fonts/**/*.{eot,woff,woff2,ttf,svg}",
 	},
@@ -56,7 +56,7 @@ let path = {
 	watch: {
 		html: srcPath + "**/*.html",
 		css: srcPath + "scss/**/*.scss",
-		js: srcPath + "js/**/*.js",
+		js: srcPath + "script/**/*.js",
 		img: srcPath + "img/**/*.{jpg,png,svg,gif,ico,webp}"
 	},
 	clean: "./" + distPath
