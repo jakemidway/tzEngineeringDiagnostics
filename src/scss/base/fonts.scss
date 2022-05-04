@@ -21,15 +21,34 @@
   font-style: normal;
   font-display: swap;
   src: local('Proxima'), 
-      url('./../fonts/ProximaNova/ProximaNova-Regular.ttf') format('ttf');
+      url('./../fonts/ProximaNova/ProximaNova-Regular.ttf');
 }
+
+@font-face {
+  font-family: 'Proxima';
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+  src: local('Proxima'), 
+      url('./../../fonts/ProximaNova/ProximaNova-RegularIt.ttf');
+}
+
+@font-face {
+  font-family: 'Proxima';
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+  src: local('Proxima'), 
+      url('./../../fonts/ProximaNova/ProximaNova-Semibold.ttf');
+}
+
 @font-face {
   font-family: 'Proxima';
   font-weight: 700;
   font-style: normal;
   font-display: swap;
   src: local('Proxima'), 
-      url('./../fonts/ProximaNova/ProximaNova-Bold.ttf') format('ttf');
+      url('./../fonts/ProximaNova/ProximaNova-Bold.ttf');
 }
 
 
