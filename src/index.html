@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-
+    <!-- ChiefSlider JavaScript -->
+    <script defer src="./script/slider.js"></script>
 
     <title>engineering diagnostics</title>
 </head>
@@ -97,32 +98,82 @@
         </div>
     </section>
 
-
-
     <section class="services">
         <div class="container">
-            <div class="services__wrapper">
+            <div class="services__top">
                 <p class="services__preTitle">УСЛУГИ</p>
                 <h2 class="services__title">Выполняем как комплексное обследование, так и отдельные виды работ</h2>
-                <div class="services__slider">
-                    <div class="services__list">
-                        <div class="services__item"></div>
-                        <div class="services__item"></div>
-                        <div class="services__item"></div>
-                        <div class="services__item"></div>
-                        <div class="services__item"></div>
-                        <div class="services__item"></div>
-                    </div>
-                    
-                </div> 
             </div>
+            
         </div>
-
+        <div class="slider">
+            <div class="container">
+                <div class="slider__wrapper">
+                    <div class="slider__items">
+                      <div class="slider__item services__item">
+                            <img class="services__imgSlide" alt="image slide" src="./images/services/s1.png">
+                            <h3 class="services__titSlide">Общее обследование</h3>
+                            <p class="services__textSlide">Экспертиза отдельных конструкций, обмерные работы, определение прочности, расчет несущей способности и т.д.</p>
+                            <div class="services__wrapLink">
+                                <a class="services__linkSlide" href="#">Подробнее</a>    
+                            </div>
+                          
+                      </div>
+                      <div class="slider__item services__item">
+                            <img class="services__imgSlide" alt="image slide" src="./images/services/s2.png">
+                            <h3 class="services__titSlide">Тепловизионная съемка</h3>
+                            <p class="services__textSlide">Исследование системы отопления, вентиляции и кондиционирования, а также оценка энергоэффективности здания</p>
+                            <div class="services__wrapLink">
+                                <a class="services__linkSlide" href="#">Подробнее</a>    
+                            </div>
+                      </div>
+                      <div class="slider__item services__item">
+                          <img class="services__imgSlide" alt="image slide" src="./images/services/s31.png">
+                          <h3 class="services__titSlide">Телеинспекция инженерных сетей</h3>
+                          <p class="services__textSlide">Цветная телевизионная съемка внутренней поверхности любых протяженных объектов до 250 метров</p>
+                          <div class="services__wrapLink">
+                            <a class="services__linkSlide" href="#">Подробнее</a>    
+                        </div>
+                      </div>
+                      <div class="slider__item services__item">
+                          <img class="services__imgSlide" alt="image slide" src="./images/services/s4.png">
+                          <h3 class="services__titSlide">Тахеометрическая съемка</h3>
+                          <p class="services__textSlide">Построение чертежей при помощи лазера, который с точностью до микрона определяет расположение объектов в пространстве</p>
+                          <div class="services__wrapLink">
+                            <a class="services__linkSlide" href="#">Подробнее</a>    
+                        </div>
+                      </div>
+                      <div class="slider__item services__item">
+                          <img class="services__imgSlide" alt="image slide" src="./images/services/s41.png">
+                          <h3 class="services__titSlide">Lorem, ipsum.</h3>
+                          <p class="services__textSlide">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto dolorum cum, fugiat ea reiciendis porro adipisci?</p>
+                          <div class="services__wrapLink">
+                            <a class="services__linkSlide" href="#">Подробнее</a>    
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            
+            <a href="#" class="slider__control" data-slide="prev"></a>
+            <a href="#" class="slider__control" data-slide="next"></a>
+            <ol class="slider__indicators">
+                <li data-slide-to="0"></li>
+                <li data-slide-to="1"></li>
+                <li data-slide-to="2"></li>
+                <li data-slide-to="3"></li>
+                <li data-slide-to="4"></li>
+            </ol>    
+        </div>
+        
     </section>
+        
+    
 
 
     <section class="step">
-
+        <h2 class="step__title">Мы работаем в комплексе</h2>
+        <p class="step__"></p>
     </section>
 
     <script src="./script/script.js"></script>

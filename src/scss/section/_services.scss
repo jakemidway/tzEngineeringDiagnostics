@@ -1,40 +1,79 @@
 .services {
+    font-size: 16px;
     color: var(--color-text-light);
     background-image: url(./../../images/services/bg.png),
         linear-gradient(rgba(0, 78, 134, 0.8), rgba(10, 65, 104, 0.8));
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 100px 0 80px;
+    padding: 100px 0 65px;
     overflow: hidden;
+
     
-    &__wrapper{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    &__top{
+        margin-bottom: 53px;
     }
 
     &__preTitle{
+        text-align: center;
         font-size: 20px;
         font-family: 'Bebas Neue';
         font-weight: 700;
         color: var(--color-text-accent);
         letter-spacing: 20px;
+        margin-bottom: 18px;
     }
-    &__slider{
-        align-self: flex-start;
-        padding-top: 29px;  
+    &__title{
+        text-align: center;
+        
     }
+    
     &__list{
         position: relative;
         display: flex;
         left: 0px;
     }
     &__item{
-        width: 400px;
-        min-height: 381px;
-        margin-right: 80px;
-        border: 1px solid red;
-        
+        position: relative;        
+        margin-right: 80px;        
     }
+    &__imgSlide{
+        
+        margin-bottom: 26px;
+    }
+    &__titSlide{
+        margin-bottom: 18px;
+    }
+    &__textSlide{
+        opacity: 0.7;
+        line-height: 26px;
+        margin-bottom: 50px;
+    }
+    &__wrapLink{
+        position: absolute;
+        bottom: 0;
+        
+        padding-right: 30px;
+        &::after{
+            content: '';
+            display: block;
+            position: absolute;
+            height: 21px;
+            width: 9px;
+            right: 0;
+            bottom: 0;
+            padding-right: 20px;
+            background: url(./../../images/services/arrow.svg) 50% no-repeat;
+        }
+    }  
+    &__linkSlide{
+        
+        font-size: 20px;
+        font-family: 'Bebas Neue';
+        font-weight: 700;
+        letter-spacing: 7px;
+
+    }
+
+
 }
 
