@@ -19,6 +19,14 @@
         background: none;
         border: none;
         justify-self: start;
+        cursor: pointer;
+        &:hover{
+            box-shadow: 4px 2px 2px var(--color-accent);
+        }
+        &:active{
+            transform: translate(4px, 4px);
+            box-shadow: none;
+        }
     }
 
     &__logo {
