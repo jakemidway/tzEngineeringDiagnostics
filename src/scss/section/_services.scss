@@ -1,7 +1,7 @@
 .services {
     font-size: 16px;
     color: var(--color-text-light);
-    background-image: url(./../../images/services/bg.png),
+    background-image: url(./../images/services/bg.png),
         linear-gradient(rgba(0, 78, 134, 0.8), rgba(10, 65, 104, 0.8));
     background-repeat: no-repeat;
     background-size: cover;
@@ -65,7 +65,7 @@
             right: 0;
             bottom: 0;
             padding-right: 20px;
-            background: url(./../../images/services/arrow.svg) 50% no-repeat;
+            background: url(./../images/services/arrow.svg) 50% no-repeat;
         }
     }  
     &__linkSlide{

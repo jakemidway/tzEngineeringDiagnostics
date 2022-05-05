@@ -720,9 +720,9 @@ cite {
 
 .header {
   color: var(--color-text-light);
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 78, 134, 0.8)), to(rgba(10, 65, 104, 0.8))), url(./../../images/header/sean-pollock-203658-unsplash.png);
-  background-image: -o-linear-gradient(rgba(0, 78, 134, 0.8), rgba(10, 65, 104, 0.8)), url(./../../images/header/sean-pollock-203658-unsplash.png);
-  background-image: linear-gradient(rgba(0, 78, 134, 0.8), rgba(10, 65, 104, 0.8)), url(./../../images/header/sean-pollock-203658-unsplash.png);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 78, 134, 0.8)), to(rgba(10, 65, 104, 0.8))), url(./../images/header/sean-pollock-203658-unsplash.png);
+  background-image: -o-linear-gradient(rgba(0, 78, 134, 0.8), rgba(10, 65, 104, 0.8)), url(./../images/header/sean-pollock-203658-unsplash.png);
+  background-image: linear-gradient(rgba(0, 78, 134, 0.8), rgba(10, 65, 104, 0.8)), url(./../images/header/sean-pollock-203658-unsplash.png);
   background-repeat: no-repeat;
   background-size: cover;
   padding: 18px 0 60px 0;
@@ -794,7 +794,7 @@ cite {
   content: "";
   width: 14px;
   height: 14px;
-  background: url(./../../images/header/mail.svg) 50% no-repeat;
+  background: url(./../images/header/mail.svg) 50% no-repeat;
 }
 
 .header__contTel {
@@ -829,7 +829,7 @@ cite {
   content: "";
   width: 11px;
   height: 11px;
-  background: url(./../../images/header/phone.svg) 50% no-repeat;
+  background: url(./../images/header/phone.svg) 50% no-repeat;
 }
 
 .header__telLink {
@@ -910,7 +910,7 @@ cite {
   content: "";
   width: 12px;
   height: 12px;
-  background: url(./../../images/header/download.svg) 50% no-repeat;
+  background: url(./../images/header/download.svg) 50% no-repeat;
 }
 
 .header__textGetCom {
@@ -1024,7 +1024,7 @@ cite {
   height: 30px;
   content: "";
   background-color: var(--color-accent);
-  background-image: url(./../../images/advantage/check.png);
+  background-image: url(./../images/advantage/check.png);
   background-position: 50%;
   background-repeat: no-repeat;
   border-radius: 50%;
@@ -1033,9 +1033,9 @@ cite {
 .services {
   font-size: 16px;
   color: var(--color-text-light);
-  background-image: url(./../../images/services/bg.png), -webkit-gradient(linear, left top, left bottom, from(rgba(0, 78, 134, 0.8)), to(rgba(10, 65, 104, 0.8)));
-  background-image: url(./../../images/services/bg.png), -o-linear-gradient(rgba(0, 78, 134, 0.8), rgba(10, 65, 104, 0.8));
-  background-image: url(./../../images/services/bg.png), linear-gradient(rgba(0, 78, 134, 0.8), rgba(10, 65, 104, 0.8));
+  background-image: url(./../images/services/bg.png), -webkit-gradient(linear, left top, left bottom, from(rgba(0, 78, 134, 0.8)), to(rgba(10, 65, 104, 0.8)));
+  background-image: url(./../images/services/bg.png), -o-linear-gradient(rgba(0, 78, 134, 0.8), rgba(10, 65, 104, 0.8));
+  background-image: url(./../images/services/bg.png), linear-gradient(rgba(0, 78, 134, 0.8), rgba(10, 65, 104, 0.8));
   background-repeat: no-repeat;
   background-size: cover;
   background-position-x: 50%;
@@ -1107,7 +1107,7 @@ cite {
   right: 0;
   bottom: 0;
   padding-right: 20px;
-  background: url(./../../images/services/arrow.svg) 50% no-repeat;
+  background: url(./../images/services/arrow.svg) 50% no-repeat;
 }
 
 .services__linkSlide {
@@ -1463,16 +1463,16 @@ cite {
   }
 }
 
-.webp .header{ background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 78, 134, 0.8)), to(rgba(10, 65, 104, 0.8))), url(./../../images/header/sean-pollock-203658-unsplash.webp); }
+.webp .header{ background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 78, 134, 0.8)), to(rgba(10, 65, 104, 0.8))), url(./../images/header/sean-pollock-203658-unsplash.webp); }
 
-.webp .header{ background-image: -o-linear-gradient(rgba(0, 78, 134, 0.8), rgba(10, 65, 104, 0.8)), url(./../../images/header/sean-pollock-203658-unsplash.webp); }
+.webp .header{ background-image: -o-linear-gradient(rgba(0, 78, 134, 0.8), rgba(10, 65, 104, 0.8)), url(./../images/header/sean-pollock-203658-unsplash.webp); }
 
-.webp .header{ background-image: linear-gradient(rgba(0, 78, 134, 0.8), rgba(10, 65, 104, 0.8)), url(./../../images/header/sean-pollock-203658-unsplash.webp); }
+.webp .header{ background-image: linear-gradient(rgba(0, 78, 134, 0.8), rgba(10, 65, 104, 0.8)), url(./../images/header/sean-pollock-203658-unsplash.webp); }
 
-.webp .advantage__item::after{ background-image: url(./../../images/advantage/check.webp); }
+.webp .advantage__item::after{ background-image: url(./../images/advantage/check.webp); }
 
-.webp .services{ background-image: url(./../../images/services/bg.webp), -webkit-gradient(linear, left top, left bottom, from(rgba(0, 78, 134, 0.8)), to(rgba(10, 65, 104, 0.8))); }
+.webp .services{ background-image: url(./../images/services/bg.webp), -webkit-gradient(linear, left top, left bottom, from(rgba(0, 78, 134, 0.8)), to(rgba(10, 65, 104, 0.8))); }
 
-.webp .services{ background-image: url(./../../images/services/bg.webp), -o-linear-gradient(rgba(0, 78, 134, 0.8), rgba(10, 65, 104, 0.8)); }
+.webp .services{ background-image: url(./../images/services/bg.webp), -o-linear-gradient(rgba(0, 78, 134, 0.8), rgba(10, 65, 104, 0.8)); }
 
-.webp .services{ background-image: url(./../../images/services/bg.webp), linear-gradient(rgba(0, 78, 134, 0.8), rgba(10, 65, 104, 0.8)); }
+.webp .services{ background-image: url(./../images/services/bg.webp), linear-gradient(rgba(0, 78, 134, 0.8), rgba(10, 65, 104, 0.8)); }
